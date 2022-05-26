@@ -1,0 +1,236 @@
+.wrap {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    // gap: 50px;
+    width: 70vw;
+    height: 65vh;
+    padding: 10px;
+    background-color: #fff0f5a2;
+
+    .image img {
+        width: auto;
+        height: 60vh;
+    }
+
+    .description {
+        display: grid;
+        place-items: center;
+
+        h1,
+        p, a {
+            font-size: 0.75em;
+            text-decoration: none;
+            color: black;
+        }
+
+
+
+        .descHeader {
+            font-size: 1.125em;
+        }
+
+        .descTitle {
+            margin-top: 1.5625em;
+            font-size: 0.875em;
+
+            font-weight: bold;
+        }
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .wrap {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 5%;
+        width: auto;
+        height: 500px;
+        padding: 0;
+        // background-color: #b33962a2;
+
+        .image img {
+            width: auto;
+            height: 500px;
+        }
+
+        .description {
+            display: grid;
+            place-items: center;
+
+            h1,
+            p, a {
+                font-size: 0.6em;
+            }
+
+            .descHeader {
+                font-size: 1.125em;
+            }
+
+            .descTitle {
+                margin-top: 1.5625em;
+                font-size: 0.875em;
+
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+    .wrap {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 5%;
+        // width: 550px;
+        height: 85vh;
+        padding: 0;
+        // background-color: #b33962a2;
+
+        .image img {
+            width: auto;
+            height: 85vh;
+        }
+
+        .description {
+            display: grid;
+            place-items: center;
+
+            h1,
+            p, a {
+                font-size: 0.6em;
+            }
+
+            .descHeader {
+                font-size: 1.125em;
+            }
+
+            .descTitle {
+                margin-top: 1.5625em;
+                font-size: 0.875em;
+
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 780px) {
+    .wrap {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 5%;
+        // width: 550px;
+        height: 85vh;
+        padding: 0;
+        // background-color: #b33962a2;
+
+        .image img {
+            width: auto;
+            height: 85vh;
+        }
+
+        .description {
+            display: grid;
+            place-items: center;
+
+            h1,
+            p, a {
+                font-size: 0.6em;
+            }
+
+            .descHeader {
+                font-size: 1.125em;
+            }
+
+            .descTitle {
+                margin-top: 1.5625em;
+                font-size: 0.875em;
+
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 400px) and (max-width: 600px) {
+    .wrap {
+        display: grid;
+        place-items: center;
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 5%;
+        // width: 550px;
+        height: 85vh;
+        padding: 0;
+        // background-color: #b33962a2;
+
+        .image img {
+            width: auto;
+            height: 85vh;
+        }
+
+        .description {
+            display: grid;
+            place-items: center;
+
+            h1,
+            p, a {
+                font-size: 0.3em;
+            }
+
+            .descHeader {
+                font-size: 1em;
+            }
+
+            .descTitle {
+                margin-top: 1.3em;
+                font-size: 0.6em;
+
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 400px) {
+    .wrap {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        // gap: 5%;
+        width: 100vw;
+        // height: 10vh;
+        padding: 0;
+        // background-color: #b33962a2;
+
+        .image img {
+            height: auto;
+            width: 80vw;
+            // height: 10vh;
+        }
+
+        .description {
+            display: grid;
+            place-items: center;
+
+            h1,
+            p, a {
+                font-size: 0.3em;
+            }
+
+            .descHeader {
+                font-size: 1em;
+            }
+
+            .descTitle {
+                margin-top: 0.8em;
+                font-size: 0.5em;
+
+                font-weight: bold;
+            }
+        }
+    }
+}
