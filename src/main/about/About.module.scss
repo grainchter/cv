@@ -2,7 +2,6 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(2, 1fr);
-    // gap: 50px;
     width: 70vw;
     height: 65vh;
     padding: 10px;
@@ -16,22 +15,39 @@
     .description {
         display: grid;
         place-items: center;
+        grid-template-columns: 1fr;
+        gap: 15%;
 
         h1,
-        p, a {
+        p,
+        a {
             font-size: 0.75em;
             text-decoration: none;
             color: black;
         }
 
-
-
         .descHeader {
-            font-size: 1.125em;
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr;
+
+            .descHeaderTitle {
+                font-size: 2em;
+            }
+
+            p {
+                margin-top: -1.5625em;
+            }
+        }
+
+        .descDescription {
+            display: grid;
+            place-items: center;
+            grid-template-columns: repeat(2, 1fr);
         }
 
         .descTitle {
-            margin-top: 1.5625em;
+            // margin-top: 1.5625em;
             font-size: 0.875em;
 
             font-weight: bold;
@@ -60,7 +76,8 @@
             place-items: center;
 
             h1,
-            p, a {
+            p,
+            a {
                 font-size: 0.6em;
             }
 
@@ -99,7 +116,8 @@
             place-items: center;
 
             h1,
-            p, a {
+            p,
+            a {
                 font-size: 0.6em;
             }
 
@@ -138,7 +156,8 @@
             place-items: center;
 
             h1,
-            p, a {
+            p,
+            a {
                 font-size: 0.6em;
             }
 
@@ -177,7 +196,8 @@
             place-items: center;
 
             h1,
-            p, a {
+            p,
+            a {
                 font-size: 0.3em;
             }
 
@@ -200,36 +220,50 @@
         display: grid;
         place-items: center;
         grid-template-columns: 1fr;
-        // gap: 5%;
+        // gap: 0;
         width: 100vw;
-        // height: 10vh;
+        height: 500px;
         padding: 0;
         // background-color: #b33962a2;
 
         .image img {
             height: auto;
             width: 80vw;
-            // height: 10vh;
+            margin-bottom: -2em;
         }
 
         .description {
             display: grid;
             place-items: center;
+            grid-template-columns: 1fr;
+            // gap: 15%;
 
             h1,
-            p, a {
-                font-size: 0.3em;
+            p,
+            a {
+                font-size: 0.5em;
+                text-decoration: none;
+                color: black;
             }
 
             .descHeader {
-                font-size: 1em;
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr;
+
+                .descHeaderTitle {
+                    font-size: 1em;
+                }
+
+                p {
+                    margin-top: -1.5625em;
+                }
             }
 
-            .descTitle {
-                margin-top: 0.8em;
-                font-size: 0.5em;
-
-                font-weight: bold;
+            .descDescription {
+                display: grid;
+                place-items: center;
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     }

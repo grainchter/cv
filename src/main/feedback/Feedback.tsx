@@ -23,7 +23,7 @@ const Feedback = () => {
   };
 
   const onChangeEmail = (e: React.FormEvent<HTMLInputElement>) => {
-
+    
     const reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]+)$/;
 
     if (reg.test(e.currentTarget.value) === false) {
@@ -40,10 +40,10 @@ const Feedback = () => {
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (name == null || email == null || message == null) {
+    if (name == null || email == null || emailValid == false || message == null) {
       console.log("hhghggh");
 
-      toast.error("необходим заполнить", {
+      toast.error("Пожалуйста, проверьте правильность введенных данных", {
         position: "top-center",
         autoClose: 3000,
         hideProgressBar: false,
@@ -52,7 +52,7 @@ const Feedback = () => {
         draggable: true,
         progress: undefined,
       });
-    } else if (name && email && message) {
+    } else if (name && email && emailValid && message) {
       console.log(e.currentTarget);
 
       emailjs
@@ -89,7 +89,7 @@ const Feedback = () => {
     }
   };
 
-  console.log(name);
+  console.log(emailValid);
 
   return (
     <>
@@ -106,14 +106,17 @@ const Feedback = () => {
               onChange={onChangeName}
               style={name ? styles.succes : styles.error}
             />
+            
             <input
-              type="text"
+              type="email"
               className={s.info}
               placeholder="Электронная почта"
               name="email"
               onChange={onChangeEmail}
               style={email && emailValid ? styles.succes : styles.error}
+              title="Электронная почта должна быть в виде something@something.something"
             />
+            
             <textarea
               className={s.message}
               placeholder="Добавить сообщение..."

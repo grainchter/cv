@@ -4,9 +4,11 @@ import s from "./AboutWrap.module.scss";
 const AboutWrap = () => {
   return (
     <>
-      <div className={s.parallax}>
+      <section id="home">
+        <div className={s.parallax}>
           <About />
-      </div>
+        </div>
+      </section>
     </>
   );
 };

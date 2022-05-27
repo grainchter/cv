@@ -7,21 +7,21 @@ const Projects = () => {
       description: "Маркетплейс персонажей по вселенной Рика и Морти",
       demoLink: "https://rick-shop.herokuapp.com/rick-shop/",
       github: "https://github.com/grainchter/rick-shop",
-      tool: "JavaScript",
+      img: "https://i.ibb.co/F8vRrWd/3.png",
     },
     {
       name: "Card game",
       description: "Карточная игра с покемонами",
       demoLink: "https://reactmarathonpokemongame.herokuapp.com/",
       github: "https://github.com/grainchter/react-marathon",
-      tool: "JavaScript",
+      img: "https://i.ibb.co/yYvc1gD/2.png",
     },
     {
       name: "Magazine",
       description: "Одностраничное приложение, сверстанное по макету",
       demoLink: "https://grainchter.github.io/mag-magazine/",
       github: "https://github.com/grainchter/mag-magazine",
-      tool: "JavaScript",
+      img: "https://i.ibb.co/z8dKFQp/1.png",
     },
   ];
 
@@ -33,6 +33,7 @@ const Projects = () => {
           <div className={s.wrap}>
             {projects.map((item) => (
               <div className={s.container}>
+                <img src={item.img} alt="" />
                 <p className={s.name}>{item.name}</p>
                 <p className={s.description}>{item.description}</p>
                 <a className={s.link} href={item.demoLink} target="_blank">
@@ -42,7 +43,6 @@ const Projects = () => {
                 <a className={s.link} href={item.github} target="_blank">
                   github
                 </a>
-                <p className={s.tool}>{item.tool}</p>
               </div>
             ))}
           </div>

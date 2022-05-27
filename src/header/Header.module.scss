@@ -1,10 +1,15 @@
+header {
+    position: sticky;
+    top: -5vh;
+}
+
 .wrap {
     background-color: #fff0f5;
     width: 1000px;
     height: 15vh;
     display: grid;
     grid-template-columns: 1fr 3fr;
-    gap:25px;
+    gap: 25px;
     place-items: center;
 }
 
@@ -34,14 +39,13 @@
 }
 
 @media screen and (min-width: 780px) and (max-width: 1000px) {
-    .wrap { 
-        width:97vw;
+    .wrap {
+        width: 97vw;
         // background-color: #428b3d;
     }
 }
 
 @media screen and (min-width: 500px) and (max-width: 780px) {
-    
     .wrap {
         width: 97vw;
     }
@@ -55,7 +59,11 @@
     }
 }
 
-@media screen and (min-width: 100px) and (max-width: 500px){
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    header {
+        position: sticky;
+        top: 0;
+    }
     
     .wrap {
         width: 100vw;

@@ -12,20 +12,24 @@ const About = () => {
           />
         </div>
         <div className={s.description}>
-          <h1 className={s.descHeader}>Яна Казакова</h1>
-          <p>FRONTEND DEVELOPER</p>
-          <p className={s.descTitle}>Телефон:</p>
-          <p>+7 (905) 081 23 45</p>
-          <p className={s.descTitle}>Email:</p>
-          <p>grainchter@gmail.com</p>
-          <p className={s.descTitle}>Github:</p>
-          <a
-            className={s.link}
-            href="https://github.com/grainchter"
-            target="_blank"
-          >
-            https://github.com/grainchter
-          </a>
+          <div className={s.descHeader}>
+            <h1 className={s.descHeaderTitle}>Яна Казакова</h1>
+            <p>FRONTEND DEVELOPER</p>
+          </div>
+          <div className={s.descDescription}>
+            <p className={s.descTitle}>Телефон:</p>
+            <p>+7 (905) 081 23 45</p>
+            <p className={s.descTitle}>Email:</p>
+            <p>grainchter@gmail.com</p>
+            <p className={s.descTitle}>Github:</p>
+            <a
+              className={s.link}
+              href="https://github.com/grainchter"
+              target="_blank"
+            >
+              https://github.com/grainchter
+            </a>
+          </div>
         </div>
       </div>
       {/* </div> */}
