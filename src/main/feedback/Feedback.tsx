@@ -14,7 +14,7 @@ const Feedback = () => {
       borderColor: "red",
     },
     succes: {
-      borderColor: "rgba(121, 13, 78, 0.356)",
+      borderColor: "#4a0260b9",
     },
   } as const;
 

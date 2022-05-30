@@ -33,7 +33,9 @@ const Projects = () => {
           <div className={s.wrap}>
             {projects.map((item) => (
               <div className={s.container}>
-                <img src={item.img} alt="" />
+                <div className={s.imgWrap}>
+                  <img src={item.img} alt="" />
+                </div>
                 <p className={s.name}>{item.name}</p>
                 <p className={s.description}>{item.description}</p>
                 <a className={s.link} href={item.demoLink} target="_blank">

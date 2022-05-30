@@ -6,10 +6,7 @@ const About = () => {
       {/* <div className={s.parallax}> */}
       <div className={s.wrap}>
         <div className={s.image}>
-          <img
-            src="https://i.guim.co.uk/img/media/63de40b99577af9b867a9c57555a432632ba760b/0_266_5616_3370/master/5616.jpg?width=1200&height=1200&quality=85&auto=format&fit=crop&s=93458bbe24b9f88451ea08197888ab8e"
-            alt=""
-          />
+          <img src="https://i.ibb.co/JBQRtmf/photo1.jpg" alt="" />
         </div>
         <div className={s.description}>
           <div className={s.descHeader}>
@@ -17,18 +14,24 @@ const About = () => {
             <p>FRONTEND DEVELOPER</p>
           </div>
           <div className={s.descDescription}>
-            <p className={s.descTitle}>Телефон:</p>
-            <p>+7 (905) 081 23 45</p>
-            <p className={s.descTitle}>Email:</p>
-            <p>grainchter@gmail.com</p>
-            <p className={s.descTitle}>Github:</p>
-            <a
-              className={s.link}
-              href="https://github.com/grainchter"
-              target="_blank"
-            >
-              https://github.com/grainchter
-            </a>
+            <div className={s.phone}>
+              <p className={s.descTitle}>Телефон:</p>
+              <p>+7 (905) 081 23 45</p>
+            </div>
+            <div className={s.email}>
+              <p className={s.descTitle}>Email:</p>
+              <p>grainchter@gmail.com</p>
+            </div>
+            <div className={s.github}>
+              <p className={s.descTitle}>Github:</p>
+              <a
+                className={s.link}
+                href="https://github.com/grainchter"
+                target="_blank"
+              >
+                https://github.com/grainchter
+              </a>
+            </div>
           </div>
         </div>
       </div>

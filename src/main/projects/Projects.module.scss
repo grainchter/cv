@@ -1,6 +1,6 @@
 .projectContainer {
     width: 1000px;
-
+    
 
     .title {
         text-align: center;
@@ -10,26 +10,29 @@
 
 .wrap {
     width: 1000px;
-    padding: 5%;
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
-    gap: 5%;
+    // gap: 5%;
 
     .container {
         width: 250px;
-        height: auto;
+        min-height: 400px;
         // background-color: #fff0f5;
         border: 1px solid;
         text-align: justify;
         padding: 15px;
 
-        img {
-            width: 100%;
-            height: auto;
+        .imgWrap {
+            min-height: 150px;
+            img {
+                width: 100%;
+                height: auto;
+            }
         }
 
         .name {
+            min-height: 50px;
             font-size: 2em;
             text-align: center;
             margin: 10px;
@@ -37,7 +40,8 @@
 
         .description {
             font-size: 1em;
-            height: 100px;
+            min-height: 100px;
+            
         }
 
         .link {
@@ -97,7 +101,6 @@
     .projectContainer {
         // padding: 5%;
         width: 97vw;
-        
 
         .title {
             text-align: center;
