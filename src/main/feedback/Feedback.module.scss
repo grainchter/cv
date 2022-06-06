@@ -4,7 +4,6 @@ $bgColorButton: #4a0260b9;
 .container {
     width: 1000px;
 
-
     .title {
         text-align: center;
         font-size: 25px;
@@ -52,8 +51,6 @@ form {
 @media screen and (min-width: 780px) and (max-width: 1000px) {
     .container {
         width: 97vw;
-        // height: 500px;
-        // background-color: rgb(0, 236, 134);
     }
 
     form {
@@ -112,8 +109,8 @@ form {
 
 @media screen and (min-width: 100px) and (max-width: 500px) {
     .container {
-        width: 100vw;
-
+        width: 97vw;
+        padding-top: 50px;
 
         .title {
             text-align: center;

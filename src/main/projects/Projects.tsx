@@ -3,6 +3,7 @@ import s from "./Projects.module.scss";
 const Projects = () => {
   const projects = [
     {
+      id: "1",
       name: "Rick Shop",
       description: "Маркетплейс персонажей по вселенной Рика и Морти",
       demoLink: "https://rick-shop.herokuapp.com/rick-shop/",
@@ -10,6 +11,7 @@ const Projects = () => {
       img: "https://i.ibb.co/F8vRrWd/3.png",
     },
     {
+      id: "2",
       name: "Card game",
       description: "Карточная игра с покемонами",
       demoLink: "https://reactmarathonpokemongame.herokuapp.com/",
@@ -17,6 +19,7 @@ const Projects = () => {
       img: "https://i.ibb.co/yYvc1gD/2.png",
     },
     {
+      id: "3",
       name: "Magazine",
       description: "Одностраничное приложение, сверстанное по макету",
       demoLink: "https://grainchter.github.io/mag-magazine/",
@@ -32,7 +35,7 @@ const Projects = () => {
           <h1 className={s.title}>Проекты</h1>
           <div className={s.wrap}>
             {projects.map((item) => (
-              <div className={s.container}>
+              <div className={s.container} key={item.id}>
                 <div className={s.imgWrap}>
                   <img src={item.img} alt="" />
                 </div>

@@ -1,6 +1,5 @@
 .projectContainer {
     width: 1000px;
-    
 
     .title {
         text-align: center;
@@ -13,12 +12,10 @@
     display: grid;
     place-items: center;
     grid-template-columns: repeat(3, 1fr);
-    // gap: 5%;
 
     .container {
         width: 250px;
         min-height: 400px;
-        // background-color: #fff0f5;
         border: 1px solid;
         text-align: justify;
         padding: 15px;
@@ -41,7 +38,6 @@
         .description {
             font-size: 1em;
             min-height: 100px;
-            
         }
 
         .link {
@@ -58,9 +54,7 @@
 
 @media screen and (min-width: 780px) and (max-width: 1000px) {
     .projectContainer {
-        // padding: 5%;
         width: 97vw;
-        // background-color: aquamarine;
 
         .title {
             text-align: center;
@@ -78,7 +72,6 @@
         .container {
             width: 200px;
             height: auto;
-            // background-color: #fff0f5;
             border: 1px solid;
             text-align: justify;
             padding: 15px;
@@ -99,7 +92,6 @@
 
 @media screen and (min-width: 500px) and (max-width: 780px) {
     .projectContainer {
-        // padding: 5%;
         width: 97vw;
 
         .title {
@@ -119,7 +111,6 @@
         .container {
             width: 150px;
             height: auto;
-            // background-color: #fff0f5;
             border: 1px solid;
             text-align: justify;
             padding: 10px;
@@ -140,9 +131,7 @@
 
 @media screen and (min-width: 100px) and (max-width: 500px) {
     .projectContainer {
-        // padding: 5%;
         width: 100vw;
-        // margin-bottom: 5%;
 
         .title {
             text-align: center;

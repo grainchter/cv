@@ -59,7 +59,6 @@ $bgColor: #4a0260b9;
         display: grid;
         place-items: center;
         grid-template-columns: repeat(2, 1fr);
-        // gap: 5%;
         width: auto;
         height: 500px;
         padding: 0;
@@ -98,8 +97,6 @@ $bgColor: #4a0260b9;
         display: grid;
         place-items: center;
         grid-template-columns: repeat(2, 1fr);
-        // gap: 5%;
-        // width: 550px;
         height: 85vh;
         padding: 0;
 
@@ -137,8 +134,6 @@ $bgColor: #4a0260b9;
         display: grid;
         place-items: center;
         grid-template-columns: repeat(2, 1fr);
-        // gap: 5%;
-        // width: 550px;
         height: 85vh;
         padding: 0;
 
@@ -175,8 +170,6 @@ $bgColor: #4a0260b9;
         display: grid;
         place-items: center;
         grid-template-columns: repeat(2, 1fr);
-        // gap: 5%;
-        // width: 550px;
         height: 85vh;
         padding: 0;
 
@@ -234,7 +227,7 @@ $bgColor: #4a0260b9;
         place-items: center;
         grid-template-columns: 1fr;
         gap: 0;
-        width: 100vw;
+        width: 90vw;
         padding: 0;
         background-color: transparent;
 

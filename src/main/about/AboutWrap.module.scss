@@ -7,32 +7,22 @@ p {
   margin: auto;
 }
 
-.parallax {
-  /* The image used */
+.wrap {
   background-image: url("https://i.ibb.co/sQB75vc/e788045efe74e0d9181c060d0e58948c.jpg");
-
-  /* Set a specific height */
   height: 85vh;
   width: 1000px;
-
   display: grid;
   place-items: center;
 }
 
 @media screen and (max-width: 1000px) {
-  .parallax {
-    width: 97vw;
-  }
-}
-
-@media screen and (max-width: 780px) {
-  .parallax {
+  .wrap {
     width: 97vw;
   }
 }
 
 @media screen and (min-width: 100px) and (max-width: 450px) {
-  .parallax {
+  .wrap {
     padding: 15px;
     display: grid;
     place-items: start;

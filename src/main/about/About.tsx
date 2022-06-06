@@ -3,7 +3,6 @@ import s from "./About.module.scss";
 const About = () => {
   return (
     <>
-      {/* <div className={s.parallax}> */}
       <div className={s.wrap}>
         <div className={s.image}>
           <img src="https://i.ibb.co/JBQRtmf/photo1.jpg" alt="" />
@@ -35,7 +34,6 @@ const About = () => {
           </div>
         </div>
       </div>
-      {/* </div> */}
     </>
   );
 };

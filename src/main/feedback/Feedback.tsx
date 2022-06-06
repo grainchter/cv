@@ -97,8 +97,6 @@ const Feedback = () => {
     }
   };
 
-  console.log(emailValid);
-
   return (
     <>
       <ToastContainer theme="colored" />

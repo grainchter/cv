@@ -5,7 +5,7 @@ const AboutWrap = () => {
   return (
     <>
       <section id="home">
-        <div className={s.parallax}>
+        <div className={s.wrap}>
           <About />
         </div>
       </section>
