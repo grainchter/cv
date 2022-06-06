@@ -4,7 +4,7 @@ $textColorHover: #d0adc4;
 
 header {
     position: sticky;
-    top: -5vh;
+    // top: -5vh;
 }
 
 .wrap {
@@ -69,6 +69,7 @@ header {
     }
 
     .wrap {
+        padding-top: 20px;
         width: 100vw;
         height: auto;
         gap: 15px;
