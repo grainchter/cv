@@ -63,7 +63,6 @@ $bgColor: #4a0260b9;
         width: auto;
         height: 500px;
         padding: 0;
-        // background-color: #b33962a2;
 
         .image img {
             width: auto;
@@ -171,86 +170,84 @@ $bgColor: #4a0260b9;
     }
 }
 
-// @media screen and (min-width: 450px) and (max-width: 600px) {
-//     .wrap {
-//         display: grid;
-//         place-items: center;
-//         grid-template-columns: repeat(2, 1fr);
-//         // gap: 5%;
-//         // width: 550px;
-//         height: 85vh;
-//         padding: 0;
-
-//         .image img {
-//             width: auto;
-//             height: 85vh;
-//         }
-
-//         .description {
-//             display: grid;
-//             place-items: center;
-//             grid-template-columns: 1fr;
-    
-//             h1,
-//             p,
-//             a {
-//                 font-size: 0.3em;
-//                 text-decoration: none;
-//                 color: rgb(255, 255, 255);
-//             }
-    
-//             .descHeader {
-//                 display: grid;
-//                 place-items: center;
-//                 grid-template-columns: 1fr;
-    
-//                 .descHeaderTitle {
-//                     font-size: 1em;
-//                 }
-    
-//                 p {
-//                     margin-top: -1.5em;
-//                     margin-bottom: 1.5em;
-//                 }
-//             }
-    
-//             .descDescription {
-//                 display: grid;
-//                 align-items: center;
-//                 grid-template-columns: 1fr;
-//                 gap: 5%;
-    
-//                 .descTitle {
-//                     font-size: 0.5em;
-//                     font-weight: bold;
-//                 }
-//             }
-//         }
-//     }
-// }
-
-@media screen and (min-width: 100px) and (max-width: 600px) {
+@media screen and (min-width: 450px) and (max-width: 780px) {
     .wrap {
         display: grid;
         place-items: center;
-        grid-template-columns: 1fr;
-        // gap: 0;
-        width: 100vw;
-        height: 500px;
+        grid-template-columns: repeat(2, 1fr);
+        // gap: 5%;
+        // width: 550px;
+        height: 85vh;
         padding: 0;
 
-
         .image img {
-            height: auto;
-            width: 60vw;
-            margin-bottom: -2em;
+            width: auto;
+            height: 85vh;
         }
 
         .description {
             display: grid;
             place-items: center;
             grid-template-columns: 1fr;
-    
+
+            h1,
+            p,
+            a {
+                font-size: 0.3em;
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+            }
+
+            .descHeader {
+                display: grid;
+                place-items: center;
+                grid-template-columns: 1fr;
+
+                .descHeaderTitle {
+                    font-size: 1em;
+                }
+
+                p {
+                    margin-top: -1.5em;
+                    margin-bottom: 1.5em;
+                }
+            }
+
+            .descDescription {
+                display: grid;
+                align-items: center;
+                grid-template-columns: 1fr;
+                gap: 5%;
+
+                .descTitle {
+                    font-size: 0.5em;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 450px) {
+    .wrap {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        gap: 0;
+        width: 100vw;
+        padding: 0;
+        background-color: transparent;
+
+        .image img {
+            height: 60vh;
+            width: auto;
+        }
+
+        .description {
+            display: grid;
+            place-items: center;
+            grid-template-columns: 1fr;
+
             h1,
             p,
             a {
@@ -258,28 +255,28 @@ $bgColor: #4a0260b9;
                 text-decoration: none;
                 color: rgb(255, 255, 255);
             }
-    
+
             .descHeader {
                 display: grid;
                 place-items: center;
                 grid-template-columns: 1fr;
-    
+
                 .descHeaderTitle {
                     font-size: 1em;
                 }
-    
+
                 p {
                     margin-top: -1.5em;
                     margin-bottom: 1.5em;
                 }
             }
-    
+
             .descDescription {
                 display: grid;
                 align-items: center;
                 grid-template-columns: 1fr;
                 gap: 5%;
-    
+
                 .descTitle {
                     font-size: 0.8em;
                     font-weight: bold;
@@ -287,5 +284,4 @@ $bgColor: #4a0260b9;
             }
         }
     }
-    }
-
+}

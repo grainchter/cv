@@ -8,11 +8,13 @@ import Main from "./main/Main";
 function App() {
   injectStyle();
   return (
-    <div className={s.wrap}>
-      <Header />
-      <Main />
+    <>
+      <div className={s.wrap}>
+        <Header />
+        <Main />
+      </div>
       <Footer />
-    </div>
+    </>
   );
 }
 
