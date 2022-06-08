@@ -1,1 +1,1 @@
-### [LIVE DEMO](https://grainchter.github.io/resume/)
+### [LIVE DEMO](https://grainchter.github.io/cv/)
