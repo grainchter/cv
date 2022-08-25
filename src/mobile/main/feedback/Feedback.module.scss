@@ -1,0 +1,158 @@
+$bgColor: #c6b3cd2f;
+$bgColorButton: #4a0260b9;
+
+.container {
+    width: 1000px;
+
+    .title {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+form {
+    display: grid;
+    height: 600px;
+    place-items: center;
+    grid-template-columns: 1fr;
+
+    .info {
+        width: 500px;
+        height: 30px;
+        background-color: $bgColor;
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid $bgColorButton;
+        border-radius: 7px;
+    }
+
+    .message {
+        width: 500px;
+        height: 250px;
+        resize: none;
+        background-color: $bgColor;
+        outline: none;
+        border: 0;
+        border-bottom: 2px solid $bgColorButton;
+        border-radius: 7px;
+    }
+
+    .button {
+        width: 100px;
+        height: 30px;
+        color: rgb(255, 255, 255);
+        background-color: $bgColorButton;
+        outline: none;
+        border: 0;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+    .container {
+        width: 97vw;
+    }
+
+    form {
+        height: 500px;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 780px) {
+    .container {
+        width: 97vw;
+
+        .title {
+            text-align: center;
+            font-size: 20px;
+        }
+
+        & > form {
+            display: grid;
+            place-items: center;
+            height: 400px;
+            gap: 10px;
+            grid-template-columns: 1fr;
+
+            & > .info {
+                width: 300px;
+                height: 20px;
+                background-color: rgba(234, 196, 219, 0.132);
+                outline: none;
+                border: 0;
+                border-bottom: 2px solid rgba(121, 13, 78, 0.356);
+                border-radius: 7px;
+            }
+
+            & > .message {
+                width: 300px;
+                height: 40vh;
+                resize: none;
+                background-color: rgba(234, 196, 219, 0.132);
+                outline: none;
+                border: 0;
+                border-bottom: 2px solid rgba(121, 13, 78, 0.356);
+                border-radius: 7px;
+            }
+
+            & > .button {
+                width: 100px;
+                height: 30px;
+                background-color: rgba(94, 8, 97, 0.619);
+                outline: none;
+                border: 0;
+                border-radius: 3px;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    .container {
+        width: 97vw;
+        padding-top: 50px;
+
+        .title {
+            text-align: center;
+            font-size: 15px;
+        }
+
+        & > form {
+            display: grid;
+            place-items: center;
+            height: 500px;
+            gap: 20px;
+            grid-template-columns: 1fr;
+
+            & > .info {
+                width: 200px;
+                height: 20px;
+                background-color: rgba(234, 196, 219, 0.132);
+                outline: none;
+                border: 0;
+                border-bottom: 2px solid rgba(121, 13, 78, 0.356);
+                border-radius: 7px;
+            }
+
+            & > .message {
+                width: 200px;
+                height: 40vh;
+                resize: none;
+                background-color: rgba(234, 196, 219, 0.132);
+                outline: none;
+                border: 0;
+                border-bottom: 2px solid rgba(121, 13, 78, 0.356);
+                border-radius: 7px;
+            }
+
+            & > .button {
+                width: 100px;
+                height: 30px;
+                background-color: rgba(94, 8, 97, 0.619);
+                outline: none;
+                border: 0;
+                border-radius: 3px;
+            }
+        }
+    }
+}

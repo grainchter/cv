@@ -1,0 +1,51 @@
+.wrap {
+    height: auto;
+    width: 1000px;
+    padding: 5%;
+}
+
+.title {
+    text-align: center;
+    font-size: 25px;
+}
+
+.content {
+    text-align: justify;
+    font-size: 15px;
+}
+
+@media screen and (min-width: 780px) and (max-width: 1000px) {
+    .wrap {
+        width: 97vw;
+    }
+}
+
+@media screen and (min-width: 500px) and (max-width: 780px) {
+    .wrap {
+        width: 97vw;
+    }
+    .title {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .content {
+        text-align: justify;
+        font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 100px) and (max-width: 500px) {
+    .wrap {
+        width: 97vw;
+    }
+    .title {
+        text-align: center;
+        font-size: 15px;
+    }
+
+    .content {
+        text-align: justify;
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,45 @@
+$bgColor: #4a0260;
+$textColor: #fff3fb;
+$textColorHover: #d0adc4;
+
+header {
+  position: sticky;
+  top: 0;
+}
+
+.wrap {
+  padding-top: 20px;
+  width: 100vw;
+  height: auto;
+  gap: 15px;
+  grid-template-columns: 1fr;
+  background-color: $bgColor;
+  display: grid;
+  place-items: center;
+
+  .name {
+    font-size: 1em;
+    color: $textColor;
+    &:hover {
+      color: $textColorHover;
+    }
+  }
+
+  .menu {
+    font-size: 0.5em;
+    ul {
+      margin: 0;
+      padding: 4px;
+    }
+
+    ul li {
+      display: inline;
+      margin-right: 10px;
+      padding: 3px;
+      color: $textColor;
+      &:hover {
+        color: $textColorHover;
+      }
+    }
+  }
+}
