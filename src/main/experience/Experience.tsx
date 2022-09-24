@@ -8,6 +8,27 @@ const Experience = () => {
           <h1 className={s.title}>Опыт работы</h1>
           <div className={s.wrap}>
             <div className={s.date}>
+              <p>Октябрь 2021 — настоящее время</p>
+              <p>Frontend-разработчик</p>
+            </div>
+            <div className={s.line}></div>
+            <div className={s.info}>
+              <p className={s.infoTitle}>
+                Индивидуальное предпринимательство / частная практика / фриланс
+              </p>
+              <p>
+                - адаптивная и кроссбраузерная верстка;
+                <br />
+                - добавление функциональности элементам сайта и написание
+                скриптов;
+                <br />- разработка клиентской части с использованием
+                библиотек/фреймворков или же ванильного javascript;
+              </p>
+            </div>
+          </div>
+          <br />
+          <div className={s.wrap}>
+            <div className={s.date}>
               <p>2019</p>
               <p>Веб-мастер</p>
             </div>
